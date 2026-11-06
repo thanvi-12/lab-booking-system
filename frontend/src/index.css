@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+.navbar {
+  background: #172554;
+  color: white;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar button {
+  background: #ef4444;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.auth-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card,
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 430px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.auth-card h1 {
+  margin-bottom: 12px;
+}
+
+.auth-card p {
+  margin: 15px 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+button,
+.link-button {
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+button:hover,
+.link-button:hover {
+  opacity: 0.85;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-card button,
+.form-card button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.resource-card,
+.booking-card,
+.admin-section {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.resource-card h2,
+.resource-card h3 {
+  margin-bottom: 12px;
+}
+
+.resource-card p,
+.booking-card p {
+  margin: 10px 0;
+}
+
+.resource-card .link-button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.admin-section {
+  margin-top: 30px;
+}
+
+.admin-section h2 {
+  margin-bottom: 20px;
+}
+
+.resource-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: center;
+}
+
+.filters,
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.filters > * {
+  flex: 1;
+  min-width: 140px;
+}
+
+.danger-button {
+  background: #dc2626;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.center {
+  text-align: center;
+  margin: 40px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .container {
+    padding: 12px;
+  }
+}
